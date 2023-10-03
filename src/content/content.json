@@ -1,0 +1,21 @@
+{
+    "WelcomeMessage": "Hello! My name is Danyal and I'm currently studying Statistics at the University of Toronto. Here, you can explore my collection of diverse projects, delve into my comprehensive course notes, or read an insightful article on my blog.",
+    "projects": [
+        {
+            "image": "website.png",
+            "title": "This Website",
+            "desc": "This portfolio website, designed in Figma and implemented using Vue.js, reflects my passion for design and coding. Integrating responsiveness, transitions, and routing within Vue.js was a challenge, but overall, crafting this website deepened my Vue.js proficiency and honed my design skills. I learned to harmonize aesthetics and functionality seamlessly.",
+            "lang": ["Vue.js", "Figma", "HTML/CSS/Javascript"],
+            "link": "https://danyaltairoski.com",
+            "git": "https://github.com/danyaltairoski/vue.js-portfolio"
+        }
+      ],
+      "notes": [
+        {
+            "CourseCode": "TBA",
+            "CourseTitle": "In Progress...",
+            "link": "https://danyaltairoski.com",
+            "yt": "https://www.youtube.com/@danyaltairoski"
+        }
+      ]
+}
