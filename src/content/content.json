@@ -1,21 +1,35 @@
 {
-    "WelcomeMessage": "Hello! My name is Danyal and I'm currently studying Statistics at the University of Toronto. Here, you can explore my collection of diverse projects, delve into my comprehensive course notes, or read an insightful article on my blog.",
-    "projects": [
-        {
-            "image": "website.png",
-            "title": "This Website",
-            "desc": "This portfolio website, designed in Figma and implemented using Vue.js, reflects my passion for design and coding. Integrating responsiveness, transitions, and routing within Vue.js was a challenge, but overall, crafting this website deepened my Vue.js proficiency and honed my design skills. I learned to harmonize aesthetics and functionality seamlessly.",
-            "lang": ["Vue.js", "Figma", "HTML/CSS/Javascript"],
-            "link": "https://danyaltairoski.com",
-            "git": "https://github.com/danyaltairoski/vue.js-portfolio"
-        }
-      ],
-      "notes": [
-        {
-            "CourseCode": "TBA",
-            "CourseTitle": "In Progress...",
-            "link": "https://danyaltairoski.com",
-            "yt": "https://www.youtube.com/@danyaltairoski"
-        }
-      ]
+  "WelcomeMessage": "Hello! My name is Danyal and I'm currently studying Statistics at the University of Toronto. Here, you can explore my collection of diverse projects, delve into my comprehensive course notes, or read an insightful article on my blog.",
+  "projects": [
+      {
+          "image": "sta304.png",
+          "title": "Measuring the Effectiveness of Online Learning Resources",
+          "desc": "A project from my Surveys, Sampling and Observational Data Course: Led a group of six in 'Measuring the Effectiveness of Online Learning Resources,' which explores the impact and usage patterns among university students. Our study aligns with course objectives, emphasizing effective statistical communication, technical report writing, teamwork, self-learning, and crafting quality questionnaire questions. Focused on the students of the class, our analysis aims to reveal insights into the effectiveness of online learning resources, considering variables such as learning format and study engagement. Despite potential sample limitations, our project employs a generalized questionnaire to draw insights applicable to the broader student population, enhancing our statistical and communication skills in a real-world context.",
+          "lang": ["R"],
+          "git": "https://github.com/danyaltairoski/STA304-Project"
+      },
+      {
+        "image": "csc207.png",
+        "title": "Enhancing User Experience: A Focus on Accessibility",
+        "desc": "A project from my Software Design Course: Led a group of four focused on enhancing a codebase from one of our AdventureGame assignments. Our main goal was to incorporate accessibility features, ensuring a user-friendly and inclusive software experience. We created user stories to outline specific accessibility requirements and used design patterns to implement them in a modular and scalable way. Unified Modeling Language (UML) diagrams helped us visualize the code structure. Following agile development and Scrum, we iteratively adapted to project needs. Git, using Git Flow, managed version control, facilitating smooth collaboration. This experience deepened my understanding of incorporating accessibility and highlighted the importance of effective teamwork in achieving shared goals.",
+        "lang": ["Java", "JavaFX", "Google Cloud API"],
+        "git": "https://gitfront.io/r/danyaltairoski/8EHiD2gQzirq/AdventureGame/"
+      },
+      {
+      "image": "website.png",
+      "title": "This Website",
+      "desc": "This portfolio website, designed in Figma and implemented using Vue.js, reflects my passion for design and coding. Integrating responsiveness, transitions, and routing within Vue.js was a challenge, but overall, crafting this website deepened my Vue.js proficiency and honed my design skills. I learned to harmonize aesthetics and functionality seamlessly.",
+      "lang": ["Vue.js", "Figma", "HTML/CSS/Javascript"],
+      "link": "https://danyaltairoski.com",
+      "git": "https://github.com/danyaltairoski/"
+      }
+    ],
+    "notes": [
+      {
+          "CourseCode": "TBA",
+          "CourseTitle": "In Progress...",
+          "link": "https://danyaltairoski.com",
+          "yt": "https://www.youtube.com/@danyaltairoski"
+      }
+    ]
 }

@@ -13,9 +13,9 @@
                         <li v-for="item in project.lang" :key="item">{{ item }}</li>
                     </ul>
                 </div>
-                <div class="links">
-                    <a :href="project.link" class="link" target="_blank"><img src="../assets/share.png" class="icon" alt="share"></a>
-                    <a :href="project.git" class="git-link" target="_blank"><img src="../assets/github-black.png" class="icon" alt="github"></a>
+                <div class="links" v-if="project.git || project.link">
+                    <a :href="project.link" class="link" target="_blank" v-if="project.link"><img src="../assets/share.png" class="icon" alt="share"></a>
+                    <a :href="project.git" class="git-link" target="_blank" v-if="project.git"><img src="../assets/github-black.png" class="icon" alt="github"></a>
                 </div>
             </div>
         </div>
