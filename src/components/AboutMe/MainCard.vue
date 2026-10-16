@@ -65,7 +65,7 @@ export default {
 .id-card {
   width: 400px;
   height: 600px;
-  background-color: #F8F8F8;
+  background-color: white;
   overflow: hidden;
   border-radius: 16px;
   border: 2px solid #022247;
