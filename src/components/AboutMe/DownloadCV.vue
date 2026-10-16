@@ -1,6 +1,6 @@
 <template>
     <div class="CVButtonContainer">
-        <div class="CVButton" @click="downloadCV">
+        <div class="CVButton">
             <p class="btn-text">Download CV</p>
         </div>
     </div>
@@ -8,23 +8,7 @@
 
 <script>
     export default {
-        methods: {
-            downloadCV() {
-            // Replace 'your_cv_filename.pdf' with the actual filename of your CV
-            const filename = 'your_cv_filename.pdf';
-            
-            // Replace 'path_to_your_cv' with the actual path to your CV file
-            const filePath = 'path_to_your_cv/' + filename;
-            
-            // Create a link element
-            const link = document.createElement('a');
-            link.href = filePath;
-            link.download = filename;
-            
-            // Dispatch a click event on the link
-            link.dispatchEvent(new MouseEvent('click'));
-            }
-        }
+        
     }
 </script>
 

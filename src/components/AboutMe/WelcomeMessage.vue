@@ -1,6 +1,6 @@
 <template>
     <div class="welcome-container">
-      <a class="CVButton" target='_blank' href="https://drive.google.com/file/d/1xXeRuf7QsZnJdqxAt2DgQCODonzrvaUi/view?usp=share_link">
+      <a class="CVButton" target='_blank' href="https://drive.google.com/file/d/1jYgylrVkI33-8oZoLzRFbXusIGqi9V9F/view?usp=sharing">
           <p class="btn-text">Download CV</p>
       </a>
       <div class="gradient-wrap">

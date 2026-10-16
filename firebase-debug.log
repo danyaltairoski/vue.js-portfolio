@@ -1,0 +1,45 @@
+[debug] [2025-06-28T23:55:23.265Z] ----------------------------------------------------------------------
+[debug] [2025-06-28T23:55:23.267Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2025-06-28T23:55:23.267Z] CLI Version:   14.9.0
+[debug] [2025-06-28T23:55:23.267Z] Platform:      darwin
+[debug] [2025-06-28T23:55:23.267Z] Node Version:  v22.17.0
+[debug] [2025-06-28T23:55:23.267Z] Time:          Sat Jun 28 2025 19:55:23 GMT-0400 (Eastern Daylight Saving Time)
+[debug] [2025-06-28T23:55:23.267Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-28T23:55:23.366Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-28T23:55:23.366Z] > authorizing via signed-in user (danyalilmitairoski@gmail.com)
+[debug] [2025-06-28T23:55:23.367Z] [iam] checking project portfolio-9f21b for permissions ["firebase.projects.get"]
+[debug] [2025-06-28T23:55:23.367Z] Checked if tokens are valid: true, expires at: 1751156378685
+[debug] [2025-06-28T23:55:23.367Z] Checked if tokens are valid: true, expires at: 1751156378685
+[debug] [2025-06-28T23:55:23.367Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-9f21b:testIamPermissions [none]
+[debug] [2025-06-28T23:55:23.367Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-9f21b:testIamPermissions x-goog-quota-user=projects/portfolio-9f21b
+[debug] [2025-06-28T23:55:23.367Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-9f21b:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-06-28T23:55:23.693Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-9f21b:testIamPermissions 200
+[debug] [2025-06-28T23:55:23.693Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-9f21b:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-06-28T23:55:23.694Z] Checked if tokens are valid: true, expires at: 1751156378685
+[debug] [2025-06-28T23:55:23.694Z] Checked if tokens are valid: true, expires at: 1751156378685
+[debug] [2025-06-28T23:55:23.694Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-9f21b [none]
+[debug] [2025-06-28T23:55:23.788Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-9f21b 200
+[debug] [2025-06-28T23:55:23.788Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-9f21b {"projectNumber":"886525289261","projectId":"portfolio-9f21b","lifecycleState":"ACTIVE","name":"portfolio","labels":{"firebase":"enabled"},"createTime":"2023-08-25T00:40:23.343886Z"}
+[info] 
+[info] === Serving from '/Users/deechay/Desktop/archives/(danyaltairoski.com)/vue.js-website/portfolio'...
+[info] 
+[debug] [2025-06-28T23:55:23.791Z] Checked if tokens are valid: true, expires at: 1751156378685
+[debug] [2025-06-28T23:55:23.791Z] Checked if tokens are valid: true, expires at: 1751156378685
+[debug] [2025-06-28T23:55:23.791Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/portfolio-9f21b/sites 
+[debug] [2025-06-28T23:55:24.603Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/portfolio-9f21b/sites 200
+[debug] [2025-06-28T23:55:24.603Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/portfolio-9f21b/sites {"sites":[{"name":"projects/portfolio-9f21b/sites/portfolio-9f21b","defaultUrl":"https://portfolio-9f21b.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-06-28T23:55:24.604Z] Checked if tokens are valid: true, expires at: 1751156378685
+[debug] [2025-06-28T23:55:24.604Z] Checked if tokens are valid: true, expires at: 1751156378685
+[debug] [2025-06-28T23:55:24.604Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-9f21b/webApps/-/config [none]
+[debug] [2025-06-28T23:55:25.144Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-9f21b/webApps/-/config 200
+[debug] [2025-06-28T23:55:25.144Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-9f21b/webApps/-/config {"projectId":"portfolio-9f21b","storageBucket":"portfolio-9f21b.firebasestorage.app","apiKey":"AIzaSyC2eLAEQzcZM7tg3d-plRjiI2NMzqFsbxE","authDomain":"portfolio-9f21b.firebaseapp.com","messagingSenderId":"886525289261"}
+[debug] [2025-06-28T23:55:25.156Z] Checked if tokens are valid: true, expires at: 1751156378685
+[debug] [2025-06-28T23:55:25.156Z] Checked if tokens are valid: true, expires at: 1751156378685
+[debug] [2025-06-28T23:55:25.156Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-9f21b [none]
+[debug] [2025-06-28T23:55:25.490Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-9f21b 200
+[debug] [2025-06-28T23:55:25.490Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-9f21b {"projectId":"portfolio-9f21b","projectNumber":"886525289261","displayName":"portfolio","name":"projects/portfolio-9f21b","resources":{"hostingSite":"portfolio-9f21b"},"state":"ACTIVE","etag":"1_7fc75731-4594-47fa-b035-61fb9c598ab0"}
+[info] i  hosting[portfolio-9f21b]: Serving hosting files from: dist {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mdist\u001b[22m"}}
+[info] ✔  hosting[portfolio-9f21b]: Local server: http://localhost:5002 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5002\u001b[22m\u001b[24m"}}
+[info] i  hosting: ::1 - - [28/Jun/2025:23:55:31 +0000] "GET / HTTP/1.1" - - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [28/Jun/2025:23:55:31 +0000] \"GET / HTTP/1.1\" - - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0\""}}
+[info] i  hosting: ::1 - - [28/Jun/2025:23:55:31 +0000] "GET /%3C%=%20BASE_URL%20%%3Elogo.ico HTTP/1.1" 500 - "http://localhost:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [28/Jun/2025:23:55:31 +0000] \"GET /%3C%=%20BASE_URL%20%%3Elogo.ico HTTP/1.1\" 500 - \"http://localhost:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0\""}}
