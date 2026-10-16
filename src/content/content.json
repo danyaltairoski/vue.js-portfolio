@@ -2,6 +2,14 @@
   "WelcomeMessage": "Hello! My name is Danyal and I'm currently studying Statistics at the University of Toronto. Here, you can explore my collection of diverse projects, delve into my comprehensive course notes, or read an insightful article on my blog.",
   "projects": [
       {
+          "image": "csc316.png",
+          "title": "SteamStats: A Data Visualization Project",
+          "desc": "A data visualization project from my Data Visualization Course: Led a team of four to develop 'SteamStats,' an interactive web-based data story exploring modern trends in PC gaming using data from the popular game distribution platform Steam. The project analyzes industry-wide genre shifts, player engagement patterns, pricing strategies, and a comparative evaluation between independent developers and major commercial studios. Built using D3.js and Python (pandas) for data processing, the platform features novel interactive visualizations including a 3D donut chart and a dynamic wallet pricing tool, designed to help gamers make informed purchasing decisions and provide developers with actionable market insights.",
+          "lang": ["D3.js", "HTML/CSS/Javascript", "Python"],
+          "link": "https://dadler83.github.io/CSC316-data-viz-project",
+          "git": "https://github.com/dadler83/CSC316-data-viz-project"
+      },
+      {
           "image": "sta304.png",
           "title": "Measuring the Effectiveness of Online Learning Resources",
           "desc": "A project from my Surveys, Sampling and Observational Data Course: Led a group of six in 'Measuring the Effectiveness of Online Learning Resources,' which explores the impact and usage patterns among university students. Our study aligns with course objectives, emphasizing effective statistical communication, technical report writing, teamwork, self-learning, and crafting quality questionnaire questions. Focused on the students of the class, our analysis aims to reveal insights into the effectiveness of online learning resources, considering variables such as learning format and study engagement. Despite potential sample limitations, our project employs a generalized questionnaire to draw insights applicable to the broader student population, enhancing our statistical and communication skills in a real-world context.",
