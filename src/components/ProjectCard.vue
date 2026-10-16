@@ -41,7 +41,7 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Sora');
 
 li {
-    color: var(--black-75, rgba(37, 31, 34, 0.80));
+    color: rgba(2, 34, 71, 0.8);
     font-family: IBM Plex Sans;
     font-size: 16px;
     font-style: normal;
@@ -57,7 +57,7 @@ ul{
 }
 
 .created {
-    color: var(--black, #251F22);
+    color: #022247;
     text-align: center;
     font-family: IBM Plex Sans;
     font-size: 16px;
@@ -76,8 +76,8 @@ ul{
 .gradient-wrap {
   width: 100%;
   height: 50%;
-  background: linear-gradient(90deg, #BEF720 0%, #F7148F 100%);
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+  background: #022247;
+  box-shadow: 0px 2px 5px rgba(2, 34, 71, 0.16);
   margin-bottom: 30px;
   display: flex;
   border-radius: 16px;
@@ -85,7 +85,7 @@ ul{
 .project-box {
   width: 100%;
   height: 100%;
-  background: #e9e9e9;
+  background: #EDF2F6;
   margin: 5px;
   z-index: 2;
   display: flex;
@@ -97,15 +97,15 @@ ul{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: white;
+    background: #F8F8F8;
     width: 65%;
     padding: 4%;
-    border-right: 2px solid #ccc;;
-    border-left: 2px solid #ccc;;
+    border-right: 2px solid #C8D6E4;
+    border-left: 2px solid #C8D6E4;
 }
 
 .project-title {
-    color: var(--black, #251F22);
+    color: #022247;
     text-align: center;
     font-family: Sora;
     font-size: 32px;
@@ -116,7 +116,7 @@ ul{
     margin-bottom: 2%;
 }
 .project-desc {
-    color: var(--black-75, rgba(37, 31, 34, 0.80));
+    color: rgba(2, 34, 71, 0.8);
     text-align: center;
     font-family: IBM Plex Sans;
     font-size: 16px;
@@ -183,8 +183,8 @@ ul{
 
     .content {
         width: auto; /* Take up full width */
-        border-top: 2px solid #ccc;;
-        border-bottom: 2px solid #ccc;;
+        border-top: 2px solid #C8D6E4;
+        border-bottom: 2px solid #C8D6E4;
         border-right: 0px;
         border-left: 0px ;
     }

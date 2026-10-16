@@ -1,37 +1,49 @@
 <template>
   <div class="sticky-menu">
-  <header class="header">
-    <nav v-if="!isMobile" class="nav">
-      <ul class="nav-list">
-        <li v-for="(item, index) in menuItems" :key="index" class="nav-item">
-          <router-link v-if="item.label != 'Blog'" :to ="item.link">
-            <a  
-          :href="item.link" class="nav-link">
-            {{ item.label }}
-          </a>
-          </router-link>
-          <router-view></router-view>
-          <a v-if="item.label === 'Blog'"
-          :target="item.label === 'Blog' ? '_blank' : null" 
-          :href="item.link" class="nav-link">
-            {{ item.label }}
-            <img v-if="item.label === 'Blog'" src="../assets/medium.png" alt="Blog Icon" class="icon" />
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <div id="navigation-icon" v-if="isMobile" @click="toggleMobileMenu">
-      <img src="../assets/nav.png" alt="Nav Icon" class="icon" />
-    </div>
-    <div id="page-label" class="current-page" v-if="isMobile">{{ getCurrentPageLabel() }}</div>
-  </header>
+    <header class="header">
+      <nav v-if="!isMobile" class="nav">
+        <ul class="nav-list">
+          <li v-for="(item, index) in menuItems" :key="index" class="nav-item">
+            <router-link
+              v-if="item.label !== 'Blog'"
+              :to="item.link"
+              class="nav-link"
+            >
+              {{ item.label }}
+            </router-link>
+
+            <a
+              v-else
+              :href="item.link"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="nav-link"
+            >
+              {{ item.label }}
+              <img src="../assets/medium.png" alt="Blog Icon" class="icon" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div id="navigation-icon" v-if="isMobile" @click="toggleMobileMenu">
+        <img src="../assets/nav.png" alt="Nav Icon" class="icon" />
+      </div>
+      <div id="page-label" class="current-page" v-if="isMobile">
+        {{ getCurrentPageLabel() }}
+      </div>
+    </header>
   </div>
+
   <Transition>
-  <MobileNavMenu v-if="isMobile && isMobileMenuOpen" :exitMobileMenu="exitMobileMenu" :isMobileMenuOpen="isMobileMenuOpen" />
+    <MobileNavMenu
+      v-if="isMobile && isMobileMenuOpen"
+      :exitMobileMenu="exitMobileMenu"
+      :isMobileMenuOpen="isMobileMenuOpen"
+    />
   </Transition>
 </template>
 
-  
 <script>
 import MobileNavMenu from './MobileNavMenu.vue';
 
@@ -45,7 +57,7 @@ export default {
         { label: 'Notes', link: '/notes' },
         { label: 'Blog', link: 'https://medium.com/@danyaltairoski' }
       ],
-      isMobile: false, // Initialize as false
+      isMobile: false,
       isMobileMenuOpen: false
     };
   },
@@ -61,13 +73,14 @@ export default {
   },
   methods: {
     updateIsMobileStatus() {
-      this.isMobile = window.innerWidth <= 768;
+      // Keep the original mobile menu on phones; 768px-wide iPads use the desktop tabs.
+      this.isMobile = window.innerWidth < 768;
     },
     toggleMobileMenu() {
       this.isMobileMenuOpen = !this.isMobileMenuOpen;
     },
     exitMobileMenu() {
-      this.isMobileMenuOpen = false
+      this.isMobileMenuOpen = false;
     },
     getCurrentPageLabel() {
       const currentRoute = this.$route;
@@ -78,11 +91,11 @@ export default {
 };
 </script>
 
-  
 <style>
 @import url('https://fonts.googleapis.com/css?family=Inter');
+
 a {
-	text-decoration: none;
+  text-decoration: none;
   position: relative;
   transition: text-decoration 0.2s;
 }
@@ -102,21 +115,21 @@ a:hover {
 }
 
 body {
-    margin: 0;
-    padding: 0;
-  }
+  margin: 0;
+  padding: 0;
+}
 
 .sticky-menu {
-    position: sticky;
-    top: 0;
-    z-index: 100;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 header {
-  background: var(--brand-gradient, linear-gradient(90deg, #BEF720 0%, #F7148F 100%));
-  color: white;
+  background: #EDF2F6;
+  color: #022247;
   padding: 10px 0;
-  height: 56px
+  height: 56px;
 }
 
 .nav {
@@ -127,21 +140,21 @@ header {
 .nav-list {
   list-style: none;
   display: flex;
-  margin: 0; 
-  padding: 0; 
+  margin: 0;
+  padding: 0;
 }
 
 .nav-item {
-  display: flex; /* Use flex layout for each navigation item */
-  align-items: center; /* Vertically align items in the middle */
+  display: flex;
+  align-items: center;
   margin-left: 48px;
   margin-right: 48px;
 }
 
 .nav-link {
-  display: flex; /* Use flex layout for the link and icon */
-  align-items: center; /* Vertically align link content */
-  color: var(--black, #251F22);
+  display: flex;
+  align-items: center;
+  color: #022247;
   font-family: Inter;
   font-size: 24px;
   font-style: normal;
@@ -152,23 +165,23 @@ header {
 
 .icon {
   width: 56px;
-  height: 56px
+  height: 56px;
 }
 
 #navigation-icon {
-    display: block;
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    width: 56px; /* Adjust width and height as needed */
-    height: 56px;
-    cursor: pointer;
-  }
+  display: block;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+}
 
 #page-label {
   display: block;
   position: absolute;
-  color: var(--black, #251F22);
+  color: #022247;
   font-family: Inter;
   font-size: 24px;
   font-style: normal;
@@ -179,5 +192,43 @@ header {
   left: 24px;
 }
 
+@media (min-width: 768px) {
+  header {
+    border-bottom: 1px solid rgba(2, 34, 71, 0.18);
+    padding: 0;
+    height: 76px;
+  }
 
+  .nav,
+  .nav-list {
+    height: 100%;
+  }
+
+  .nav-item {
+    height: 100%;
+    margin: 0;
+  }
+
+  .nav-link {
+    justify-content: center;
+    height: 100%;
+    padding-left: 48px;
+    padding-right: 48px;
+    transition: background-color 0.2s, color 0.2s;
+  }
+
+  .nav .nav-link:hover {
+    background-color: #DCEAF5;
+    color: #003A7A;
+    text-decoration: none;
+  }
+
+  .nav .nav-link:focus-visible {
+    background-color: #DCEAF5;
+    color: #003A7A;
+    outline: 2px solid #003A7A;
+    outline-offset: -2px;
+    text-decoration: none;
+  }
+}
 </style>

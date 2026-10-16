@@ -22,7 +22,7 @@ export default {
 
 <style>
 .title {
-  color: var(--black, #251F22);
+  color: #022247;
   text-align: center;
   font-family: Dela Gothic One;
   font-size: 40px;

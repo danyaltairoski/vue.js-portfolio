@@ -16,8 +16,13 @@
         <div class="container">
           <div class="social-icons-container">
             <div v-for="(item, index) in menuItems" :key="index" class="sm-icon">
-              <a target='_blank' :href="item.link" class="social-icon">
-                <img :src="item.icon"/>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                :href="item.link"
+                class="social-icon"
+              >
+                <img :src="item.icon" :alt="item.label" />
               </a>
             </div>
           </div>
@@ -40,8 +45,8 @@ export default {
       lastName: "Tairoski",
       jobTitle: "Student",
       menuItems: [
-        { icon: require('@/assets/github.png'), link: 'https://github.com/danyaltairoski' },
-        { icon: require('@/assets/linkedin.png'), link: 'https://www.linkedin.com/in/danyaltairoski/' },
+        { label: 'GitHub', icon: require('@/assets/github.png'), link: 'https://github.com/danyaltairoski' },
+        { label: 'LinkedIn', icon: require('@/assets/linkedin.png'), link: 'https://www.linkedin.com/in/danyaltairoski/' },
       ],
     };
   },
@@ -60,10 +65,10 @@ export default {
 .id-card {
   width: 400px;
   height: 600px;
-  background-color: white;
+  background-color: #F8F8F8;
   overflow: hidden;
   border-radius: 16px;
-  border: 2px solid var(--black-50, rgba(37, 31, 34, 0.50));
+  border: 2px solid #022247;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -87,7 +92,7 @@ export default {
   object-fit: cover;
 }
 .name {
-  color: var(--black, #251F22);
+  color: #022247;
   text-align: center;
   font-family: Sora;
   font-size: 48px;
@@ -103,12 +108,12 @@ export default {
 .divider {
   width: 40%;
   height: 1px;
-  background-color: #ccc;
+  background-color: #C8D6E4;
   margin: 10px 0;
 }
 
 .job-title {
-  color: var(--black-50, rgba(37, 31, 34, 0.50));
+  color: #46617D;
   text-align: center;
   font-family: Sora;
   font-size: 32px;
@@ -122,7 +127,7 @@ export default {
   width: 100%;
   height: 2px;
   margin-top: 16px;
-  background-color: #ccc;
+  background-color: #C8D6E4;
 }
 
 .container {
@@ -130,7 +135,7 @@ export default {
   height: 15%;
   flex-shrink: 0;
   border-radius: 0px 0px 16px 16px;
-  background: var(--black-5, rgba(37, 31, 34, 0.05));
+  background: #EDF2F6;
 }
 
 .social-icons-container {
@@ -181,7 +186,7 @@ export default {
   .divider {
   width: 40%;
   height: 1px;
-  background-color: #ccc;
+  background-color: #C8D6E4;
   margin: 16px 0;
 }
 .social-icon img {

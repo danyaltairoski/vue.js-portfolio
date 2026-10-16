@@ -32,8 +32,8 @@
     gap: 8px;
     flex-shrink: 0;
     border-radius: 8px;
-    background: var(--blue, #0762F7);
-    box-shadow: 0px 3.4660141468048096px 3.4660141468048096px 0px rgba(0, 0, 0, 0.25);
+    background: #003A7A;
+    box-shadow: 0px 3.4660141468048096px 3.4660141468048096px 0px rgba(2, 34, 71, 0.2);
     cursor: pointer;
 }
 

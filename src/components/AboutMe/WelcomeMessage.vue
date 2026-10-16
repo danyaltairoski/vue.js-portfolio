@@ -1,6 +1,6 @@
 <template>
     <div class="welcome-container">
-      <a class="CVButton" target='_blank' href="https://drive.google.com/file/d/1jYgylrVkI33-8oZoLzRFbXusIGqi9V9F/view?usp=sharing">
+      <a class="CVButton" target='_blank' href="https://drive.google.com/file/d/1BLTck3o4f9aXNFw2TqVnS4x5dVwiO03S/view?usp=drive_link">
           <p class="btn-text">Download CV</p>
       </a>
       <div class="gradient-wrap">
@@ -39,13 +39,20 @@ export default {
     gap: 8px;
     flex-shrink: 0;
     border-radius: 8px;
-    background: var(--blue, #0762F7);
-    box-shadow: 0px 3.4660141468048096px 3.4660141468048096px 0px rgba(0, 0, 0, 0.25);
+    background: #003A7A;
+    box-shadow: 0px 3.4660141468048096px 3.4660141468048096px 0px rgba(2, 34, 71, 0.2);
+    transition: background-color 0.2s ease;
     cursor: pointer; 
     z-index: 3;
     margin-top: 500px;
     margin-right: 5%;
 
+}
+
+.CVButton:hover,
+.CVButton:focus-visible {
+  background: #022247;
+  text-decoration: none;
 }
 
 .btn-text {
@@ -66,8 +73,8 @@ export default {
   position: absolute;
   width: 50%;
   height: 450px;
-  background: linear-gradient(90deg, #BEF720 0%, #F7148F 100%);
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  background: transparent;
+  box-shadow: none;
   margin-left: -30px; 
   margin-top: 30px;
   display: flex;
@@ -75,10 +82,13 @@ export default {
 .welcome-box {
   position: relative;
   width: 100%;
-  height: 400px;
-  background: #e9e9e9;
+  height: 100%;
+  box-sizing: border-box;
+  background: #F8F8F8;
+  border: 2px solid #022247;
+  border-radius: 8px;
   padding: 20px;
-  margin: 5px;
+  margin: 0;
   z-index: 2;
   display: flex;
   justify-content: center;
@@ -89,7 +99,7 @@ export default {
   padding: 10%;
 }
 .welcome-title {
-  color: var(--black, #251F22);
+  color: #022247;
   text-align: center;
   font-family: Dela Gothic One;
   font-size: 70px;
@@ -100,7 +110,7 @@ export default {
 }
 
 .welcome-message {
-  color: var(--black-75, rgba(37, 31, 34, 0.80));
+  color: rgba(2, 34, 71, 0.8);
   text-align: center;
   font-family: IBM Plex Sans;
   font-size: 26px;
@@ -142,9 +152,10 @@ export default {
   .gradient-wrap {
   position: relative;
   width: 90%;
-  height: 450px;
-  background: linear-gradient(90deg, #BEF720 0%, #F7148F 100%);
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  height: auto;
+  min-height: 450px;
+  background: transparent;
+  box-shadow: none;
   margin-left: 0px;
   margin-bottom: 4%;
   display: flex;
@@ -153,9 +164,13 @@ export default {
     position: relative;
     width: 100%;
     height: auto;
-    background: #e9e9e9;
+    min-height: 450px;
+    box-sizing: border-box;
+    background: #F8F8F8;
+    border: 2px solid #022247;
+    border-radius: 8px;
     padding: 20px;
-    margin: 5px;
+    margin: 0;
     z-index: 2;
     display: flex;
     justify-content: center;

@@ -51,8 +51,7 @@ export default {
 }
 
 .content:hover {
-    background: #d0d0d0;
-    /* background-color: rgba(0, 0, 0, 0.1);  */
+    background: #DCEAF5;
 }
 .code-div {
   width: 30%; /* Adjust this width as needed */
@@ -62,7 +61,7 @@ export default {
   border-radius: 16px 0px 0px 16px;
 }
 .course-code {
-    color: var(--black, #251F22);
+    color: #022247;
     text-align: center;
     font-family: Sora;
     font-size: 2vw;
@@ -71,7 +70,7 @@ export default {
     line-height: normal;
 }
 .note-title {
-    color: var(--black, #251F22);
+    color: #022247;
     text-align: center;
     font-family: IBM Plex Sans;
     font-size: 32px;
@@ -89,8 +88,8 @@ export default {
 .gradient-wrap {
   width: 100%;
   height: 50%;
-  background: linear-gradient(90deg, #BEF720 0%, #F7148F 100%);
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+  background: #022247;
+  box-shadow: 0px 2px 5px rgba(2, 34, 71, 0.16);
   margin-bottom: 30px;
   display: flex;
   border-radius: 16px;
@@ -98,7 +97,7 @@ export default {
 .project-box {
   width: 100%;
   height: 100%;
-  background: #e9e9e9;
+  background: #EDF2F6;
   margin: 5px;
   z-index: 2;
   display: flex;
@@ -110,11 +109,11 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: white;
+    background: #F8F8F8;
     width: 65%;
     padding: 4%;
-    border-right: 2px solid #ccc;;
-    border-left: 2px solid #ccc;;
+    border-right: 2px solid #C8D6E4;
+    border-left: 2px solid #C8D6E4;
     transition: background-color 0.3s;
     cursor: pointer;
 }
@@ -129,7 +128,7 @@ export default {
     cursor: pointer;
 }
 .links:hover {
-        background-color: rgba(0, 0, 0, 0.1); /* Darken the background on hover */
+        background-color: #DCEAF5;
     }
 .icon{
     height: auto;
@@ -180,8 +179,8 @@ export default {
 
     .content {
         width: auto; /* Take up full width */
-        border-top: 2px solid #ccc;;
-        border-bottom: 2px solid #ccc;;
+        border-top: 2px solid #C8D6E4;
+        border-bottom: 2px solid #C8D6E4;
         border-right: 0px;
         border-left: 0px ;
     }

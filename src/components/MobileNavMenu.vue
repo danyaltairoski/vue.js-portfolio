@@ -62,7 +62,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--brand-gradient, linear-gradient(90deg, #BEF720 0%, #F7148F 100%));
+  background: #EDF2F6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,7 +88,7 @@
   .nav-link {
     display: flex; /* Use flex layout for the link and icon */
     align-items: center; /* Vertically align link content */
-    color: var(--black, #251F22);
+    color: #022247;
     font-family: Inter;
     font-size: 48px;
     font-style: normal;
@@ -97,6 +97,13 @@
     box-sizing: border-box;
   }
   
+  .nav-link:hover,
+  .nav-link:focus-visible {
+    background-color: #DCEAF5;
+    color: #003A7A;
+    text-decoration: none;
+  }
+
   .icon {
     width: 102px;
     height: 102px
