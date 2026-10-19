@@ -1,7 +1,7 @@
 <template>
     <div class="welcome-container">
       <a class="CVButton" target='_blank' href="https://drive.google.com/file/d/1BLTck3o4f9aXNFw2TqVnS4x5dVwiO03S/view?usp=drive_link">
-          <p class="btn-text">Download CV</p>
+          <p class="btn-text">Download Resume</p>
       </a>
       <div class="gradient-wrap">
           <div class="welcome-box">

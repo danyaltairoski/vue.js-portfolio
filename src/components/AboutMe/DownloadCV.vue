@@ -1,7 +1,7 @@
 <template>
     <div class="CVButtonContainer">
         <div class="CVButton">
-            <p class="btn-text">Download CV</p>
+            <p class="btn-text">Download Resume</p>
         </div>
     </div>
 </template>
